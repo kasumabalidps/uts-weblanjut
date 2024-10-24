@@ -21,20 +21,20 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="relative">
-                    <img src="<?= BASEURL; ?>/img/banner1.png" style="width:100%">
-                    <div class="absolute inset-0 bg-black opacity-60"></div>
+                    <img src="<?= BASEURL; ?>/img/banner1.png" style="width:100%; height:100%; object-fit:cover;">
+                    <div class="absolute inset-0 bg-black opacity-65"></div>
                 </div>
             </div>
             <div class="mySlides fade">
                 <div class="relative">
-                    <img src="<?= BASEURL; ?>/img/banner2.png" style="width:100%">
-                    <div class="absolute inset-0 bg-black opacity-60"></div>
+                    <img src="<?= BASEURL; ?>/img/banner2.png" style="width:100%; height:100%; object-fit:cover;">
+                    <div class="absolute inset-0 bg-black opacity-65"></div>
                 </div>
             </div>
             <div class="mySlides fade">
                 <div class="relative">
-                    <img src="<?= BASEURL; ?>/img/banner3.png" style="width:100%">
-                    <div class="absolute inset-0 bg-black opacity-60"></div>
+                    <img src="<?= BASEURL; ?>/img/banner3.png" style="width:100%; height:100%; object-fit:cover;">
+                    <div class="absolute inset-0 bg-black opacity-65"></div>
                 </div>
             </div>
         </div>
