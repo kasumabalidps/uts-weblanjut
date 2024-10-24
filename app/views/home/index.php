@@ -14,7 +14,7 @@
             <div class="text-center">
                 <h1 class="text-4xl font-bold mb-4">Event Cosplay Terbesar</h1>
                 <p class="text-xl mb-8">Bergabunglah dalam petualangan cosplay yang tak terlupakan!</p>
-                <a href="<?= BASEURL; ?>/pengisian" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-lg">
+                <a href="<?= BASEURL; ?>/pengisian" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-full text-lg">
                     Daftar Sekarang
                 </a>
             </div>
