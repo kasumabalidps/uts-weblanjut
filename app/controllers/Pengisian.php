@@ -1,8 +1,8 @@
 <?php
 
-class About {
+class Pengisian {
     public function index()
     {
-        echo 'Ini Page Index About';
+        echo 'Ini Page Index Pengisian';
     }
 }
