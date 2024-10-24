@@ -18,25 +18,8 @@
                 </a>
             </div>
         </div>
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <div class="relative">
-                    <img src="<?= BASEURL; ?>/img/banner1.png" style="width:100%; height:100%; object-fit:cover;">
-                    <div class="absolute inset-0 bg-black opacity-65"></div>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="relative">
-                    <img src="<?= BASEURL; ?>/img/banner2.png" style="width:100%; height:100%; object-fit:cover;">
-                    <div class="absolute inset-0 bg-black opacity-65"></div>
-                </div>
-            </div>
-            <div class="mySlides fade">
-                <div class="relative">
-                    <img src="<?= BASEURL; ?>/img/banner3.png" style="width:100%; height:100%; object-fit:cover;">
-                    <div class="absolute inset-0 bg-black opacity-65"></div>
-                </div>
-            </div>
+        <div id="slideshowContainer" class="slideshow-container">
+            <!-- Fotonya ambil dari js -->
         </div>
     </div>
 
@@ -64,7 +47,7 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8">Galeri Cosplay Terdahulu</h2>
             <div id="cosplayGallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <!-- Galeri ambil dari js nya -->
+            <!-- Galerinya ambil dari js-->
             </div>
         </div>
     </div>
@@ -90,10 +73,35 @@
     </div> -->
 
 <script>
+    // Daftar slide
+    const slides = [
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo1.jpg', alt: 'Cosplay 1' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo2.jpg', alt: 'Cosplay 2' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo3.jpg', alt: 'Cosplay 3' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo4.jpg', alt: 'Cosplay 4' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo5.jpg', alt: 'Cosplay 5' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo6.jpg', alt: 'Cosplay 6' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo7.jpg', alt: 'Cosplay 7' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo8.jpg', alt: 'Cosplay 8' }
+    ];
+
+    function createSlideshow() {
+        const container = document.getElementById('slideshowContainer');
+        slides.forEach((slide, index) => {
+            const slideDiv = document.createElement('div');
+            slideDiv.className = 'mySlides fade';
+            slideDiv.innerHTML = `
+                <div class="relative">
+                    <img src="${slide.gambar}" alt="${slide.alt}" style="width:100%; height:100%; object-fit:cover;">
+                    <div class="absolute inset-0 bg-black opacity-65"></div>
+                </div>
+            `;
+            container.appendChild(slideDiv);
+        });
+    }
+
     // Animasi Slideshow
     let slideIndex = 0;
-    showSlides();
-
     function showSlides() {
     let i;
     const slides = document.getElementsByClassName("mySlides");
@@ -103,20 +111,20 @@
         slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1}    
         slides[slideIndex - 1].style.display = "block";  
-        setTimeout(showSlides, 5000);
+        setTimeout(showSlides, 3000);
     }
 
     // Galeri Cosplay
     function createCosplayGallery() {
     const galleryData = [
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo1.jpg', judul: 'Naruto Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo2.jpg', judul: 'One Piece Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo3.jpg', judul: 'Attack on Titan Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo4.jpg', judul: 'My Hero Academia Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo5.jpg', judul: 'Demon Slayer Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo6.jpg', judul: 'Dragon Ball Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo7.jpg', judul: 'Sailor Moon Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo8.jpg', judul: 'Genshin Impact Cosplay' }
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo1.jpg', judul: 'Gawr Gura Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo2.jpg', judul: 'Mikasa Ackerman Attack on Titan Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo3.jpg', judul: 'Luffy One Piece Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo4.jpg', judul: 'Yor Forger Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo5.jpg', judul: 'Kokomi Genshin Impact Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo6.jpg', judul: 'Kanna Kamui Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo7.jpg', judul: 'Klee Genshin Impact Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo8.jpg', judul: 'Denji Chainsaw Man Cosplay' }
     ];
 
         const galleryContainer = document.getElementById('cosplayGallery');
@@ -133,6 +141,12 @@
             galleryContainer.appendChild(galleryItem);
         });
 }
+
+    // Panggil fungsi createSlideshow kalok domnya dah di load
+    document.addEventListener('DOMContentLoaded', () => {
+        createSlideshow();
+        showSlides(); // Mulai slideshow
+    });
 
     // Panggil fungsi createCosplayGallery kalok domnya dah di load
     document.addEventListener('DOMContentLoaded', createCosplayGallery);
