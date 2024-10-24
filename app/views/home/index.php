@@ -33,7 +33,7 @@
         </div>
     </div>
 
-    <!-- Modal untuk gambar besar -->
+    <!-- Modal untuk buka gambar -->
     <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden p-4">
     <div class="relative bg-white rounded-lg shadow-lg p-4 max-w-3xl w-full mx-4 max-h-[90vh] overflow-auto">
         <button id="closeModal" class="absolute top-2 right-2 text-black bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center z-10">X</button>
