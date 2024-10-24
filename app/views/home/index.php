@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="bg-gray-900 text-white relative overflow-hidden">
-        <div class="container mx-auto px-4 py-16 relative z-10">
+        <div class="container mx-auto px-4 py-48 relative z-10">
             <div class="text-center">
                 <h1 class="text-4xl font-bold mb-4">Event Cosplay Terbesar</h1>
                 <p class="text-xl mb-8">Bergabunglah dalam petualangan cosplay yang tak terlupakan!</p>
@@ -40,7 +40,7 @@
         </div>
     </div>
 
-    <div class="bg-gray-100 py-16">
+    <!-- <div class="bg-gray-100 py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8">Mengapa Bergabung dengan Kami?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -58,60 +58,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="bg-white py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8">Galeri Cosplay Terdahulu</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <div class="relative overflow-hidden rounded-lg shadow-md">
-                    <img src="<?= BASEURL; ?>/img/baner1.png" alt="Cosplay 1" class="w-full h-64 object-cover">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-white text-center">Naruto Cosplay</p>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden rounded-lg shadow-md">
-                    <img src="<?= BASEURL; ?>/img/cosplay2.jpg" alt="Cosplay 2" class="w-full h-64 object-cover">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-white text-center">One Piece Cosplay</p>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden rounded-lg shadow-md">
-                    <img src="<?= BASEURL; ?>/img/cosplay3.jpg" alt="Cosplay 3" class="w-full h-64 object-cover">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-white text-center">Attack on Titan Cosplay</p>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden rounded-lg shadow-md">
-                    <img src="<?= BASEURL; ?>/img/cosplay4.jpg" alt="Cosplay 4" class="w-full h-64 object-cover">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-white text-center">My Hero Academia Cosplay</p>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden rounded-lg shadow-md">
-                    <img src="<?= BASEURL; ?>/img/cosplay5.jpg" alt="Cosplay 5" class="w-full h-64 object-cover">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-white text-center">Demon Slayer Cosplay</p>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden rounded-lg shadow-md">
-                    <img src="<?= BASEURL; ?>/img/cosplay6.jpg" alt="Cosplay 6" class="w-full h-64 object-cover">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-white text-center">Dragon Ball Cosplay</p>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden rounded-lg shadow-md">
-                    <img src="<?= BASEURL; ?>/img/cosplay7.jpg" alt="Cosplay 7" class="w-full h-64 object-cover">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-white text-center">Sailor Moon Cosplay</p>
-                    </div>
-                </div>
-                <div class="relative overflow-hidden rounded-lg shadow-md">
-                    <img src="<?= BASEURL; ?>/img/cosplay8.jpg" alt="Cosplay 8" class="w-full h-64 object-cover">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <p class="text-white text-center">Genshin Impact Cosplay</p>
-                    </div>
-                </div>
+            <div id="cosplayGallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Galeri ambil dari js nya -->
             </div>
         </div>
     </div>
@@ -137,6 +90,7 @@
     </div>
 
 <script>
+    // Animasi Slideshow
     let slideIndex = 0;
     showSlides();
 
@@ -145,12 +99,43 @@
     const slides = document.getElementsByClassName("mySlides");
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex - 1].style.display = "block";  
+        setTimeout(showSlides, 5000);
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex - 1].style.display = "block";  
-    setTimeout(showSlides, 5000);
+
+    // Galeri Cosplay
+    function createCosplayGallery() {
+    const galleryData = [
+        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'Naruto Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'One Piece Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'Attack on Titan Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'My Hero Academia Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'Demon Slayer Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'Dragon Ball Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'Sailor Moon Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'Genshin Impact Cosplay' }
+    ];
+
+        const galleryContainer = document.getElementById('cosplayGallery');
+
+        galleryData.forEach((item, index) => {
+            const galleryItem = document.createElement('div');
+            galleryItem.className = 'relative overflow-hidden rounded-lg shadow-md';
+            galleryItem.innerHTML = `
+                <img src="${item.gambar}" alt="Cosplay ${index + 1}" class="w-full h-64 object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <p class="text-white text-center">${item.judul}</p>
+            </div>
+        `;
+        galleryContainer.appendChild(galleryItem);
+    });
 }
+
+    // Panggil fungsi createCosplayGallery kalok domnya dah di load
+    document.addEventListener('DOMContentLoaded', createCosplayGallery);
 </script>
 </body>
 </html>
