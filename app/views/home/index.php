@@ -33,6 +33,14 @@
         </div>
     </div>
 
+    <!-- Modal untuk gambar besar -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden p-4">
+    <div class="relative bg-white rounded-lg shadow-lg p-4 max-w-3xl w-full mx-4 max-h-[90vh] overflow-auto">
+        <button id="closeModal" class="absolute top-2 right-2 text-black bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center z-10">X</button>
+        <img id="modalImage" src="" alt="Gambar Besar" class="w-full h-auto object-contain max-h-[80vh]">
+        </div>
+    </div>
+
 <script>
     // Daftar slide
     const slides = [
@@ -75,30 +83,48 @@
         setTimeout(showSlides, 3000);
     }
 
-    // Galeri Cosplay
+    // =================== Membuka Modal ======================= //
+    function showImageModal(src) {
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        modalImage.src = src;
+        modal.classList.remove('hidden');
+    }
+
+    // Fungsi untuk menutup modal besarnya
+    function closeImageModal() {
+        const modal = document.getElementById('imageModal');
+        modal.classList.add('hidden');
+    }
+
+    // Event listener untuk menutup modalnya
+    document.getElementById('closeModal').addEventListener('click', closeImageModal);
+
+    // Gambar Galerinya
     function createCosplayGallery() {
-    const galleryData = [
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo1.jpg', judul: 'Gawr Gura Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo2.jpg', judul: 'Mikasa Ackerman Attack on Titan Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo3.jpg', judul: 'Luffy One Piece Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo4.jpg', judul: 'Yor Forger Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo5.jpg', judul: 'Kokomi Genshin Impact Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo6.jpg', judul: 'Kanna Kamui Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo7.jpg', judul: 'Klee Genshin Impact Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo8.jpg', judul: 'Denji Chainsaw Man Cosplay' }
-    ];
+        const galleryData = [
+            { gambar: '<?= BASEURL; ?>/img/cosplay/photo1.jpg', judul: 'Gawr Gura Cosplay' },
+            { gambar: '<?= BASEURL; ?>/img/cosplay/photo2.jpg', judul: 'Mikasa Ackerman Attack on Titan Cosplay' },
+            { gambar: '<?= BASEURL; ?>/img/cosplay/photo3.jpg', judul: 'Luffy One Piece Cosplay' },
+            { gambar: '<?= BASEURL; ?>/img/cosplay/photo4.jpg', judul: 'Yor Forger Cosplay' },
+            { gambar: '<?= BASEURL; ?>/img/cosplay/photo5.jpg', judul: 'Kokomi Genshin Impact Cosplay' },
+            { gambar: '<?= BASEURL; ?>/img/cosplay/photo6.jpg', judul: 'Kanna Kamui Cosplay' },
+            { gambar: '<?= BASEURL; ?>/img/cosplay/photo7.jpg', judul: 'Klee Genshin Impact Cosplay' },
+            { gambar: '<?= BASEURL; ?>/img/cosplay/photo8.jpg', judul: 'Denji Chainsaw Man Cosplay' }
+        ];
 
         const galleryContainer = document.getElementById('cosplayGallery');
 
         galleryData.forEach((item, index) => {
             const galleryItem = document.createElement('div');
-            galleryItem.className = 'relative overflow-hidden rounded-lg shadow-md';
+            galleryItem.className = 'relative overflow-hidden rounded-lg shadow-md cursor-pointer';
             galleryItem.innerHTML = `
                 <img src="${item.gambar}" alt="Cosplay ${index + 1}" class="w-full h-64 object-cover">
-            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                <p class="text-white text-center font-bold">${item.judul}</p>
-            </div>
-        `;
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 z-20">
+                    <p class="text-white text-center font-bold">${item.judul}</p>
+                </div>
+            `;
+            galleryItem.addEventListener('click', () => showImageModal(item.gambar));
             galleryContainer.appendChild(galleryItem);
         });
 }
