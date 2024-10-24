@@ -60,6 +60,62 @@
         </div>
     </div>
 
+    <div class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Galeri Cosplay Terdahulu</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="<?= BASEURL; ?>/img/baner1.png" alt="Cosplay 1" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-center">Naruto Cosplay</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="<?= BASEURL; ?>/img/cosplay2.jpg" alt="Cosplay 2" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-center">One Piece Cosplay</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="<?= BASEURL; ?>/img/cosplay3.jpg" alt="Cosplay 3" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-center">Attack on Titan Cosplay</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="<?= BASEURL; ?>/img/cosplay4.jpg" alt="Cosplay 4" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-center">My Hero Academia Cosplay</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="<?= BASEURL; ?>/img/cosplay5.jpg" alt="Cosplay 5" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-center">Demon Slayer Cosplay</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="<?= BASEURL; ?>/img/cosplay6.jpg" alt="Cosplay 6" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-center">Dragon Ball Cosplay</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="<?= BASEURL; ?>/img/cosplay7.jpg" alt="Cosplay 7" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-center">Sailor Moon Cosplay</p>
+                    </div>
+                </div>
+                <div class="relative overflow-hidden rounded-lg shadow-md">
+                    <img src="<?= BASEURL; ?>/img/cosplay8.jpg" alt="Cosplay 8" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <p class="text-white text-center">Genshin Impact Cosplay</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="bg-gray-800 text-white py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8">Jadwal Acara</h2>
