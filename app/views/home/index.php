@@ -18,7 +18,7 @@
                 </a>
             </div>
         </div>
-        <div id="slideshowContainer" class="slideshow-container">
+        <div id="slideshowContainer" class="slideshow-container border-b-4 border-black">
             <!-- Fotonya ambil dari js -->
         </div>
     </div>
@@ -45,7 +45,7 @@
 
     <div class="bg-white py-16">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Galeri Cosplay Terdahulu</h2>
+            <h2 class="text-3xl font-bold text-center mb-8 underline decoration-4 decoration-black underline-offset-8">Galeri Cosplay</h2>
             <div id="cosplayGallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <!-- Galerinya ambil dari js-->
             </div>

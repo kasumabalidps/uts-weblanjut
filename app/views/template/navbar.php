@@ -6,7 +6,7 @@
     <title>Pendaftaran Event Cosplay</title>
 </head>
 <body>
-    <nav class="bg-gray-900 border-b border-gray-900">
+    <nav class="bg-gray-900 border-b-4 border-gray-500">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
