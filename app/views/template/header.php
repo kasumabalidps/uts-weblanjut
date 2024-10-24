@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pendaftaran Event Cosplay</title>
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/global.css">
 </head>
 <body>
     <nav class="bg-gray-900 border-b-4 border-gray-500">

@@ -2,7 +2,7 @@
 
 class Pengisian extends Controller {
     public function index() {
-        $this->view('template/navbar');
+        $this->view('template/header');
         $this->view('pengisian/index');
     }
 }

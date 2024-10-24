@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pendaftaran Event Cosplay</title>
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/global.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/home.css">
     <script src="<?= BASEURL; ?>/js/home.js"></script>
 </head>
@@ -23,26 +24,6 @@
         </div>
     </div>
 
-    <!-- <div class="bg-gray-100 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Mengapa Bergabung dengan Kami?</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Kompetisi Seru</h3>
-                    <p>Unjuk kebolehan kostum dan akting Anda dalam kompetisi cosplay bergengsi.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Bertemu Sesama Penggemar</h3>
-                    <p>Jalin pertemanan dengan sesama penggemar cosplay dari berbagai daerah.</p>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-4">Hadiah Menarik</h3>
-                    <p>Menangkan hadiah fantastis untuk kostum dan penampilan terbaik.</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
     <div class="bg-white py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8 underline decoration-4 decoration-black underline-offset-8">Galeri Cosplay</h2>
@@ -51,26 +32,6 @@
             </div>
         </div>
     </div>
-
-    <!-- <div class="bg-gray-800 text-white py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8">Jadwal Acara</h2>
-            <div class="max-w-2xl mx-auto">
-                <div class="mb-6">
-                    <h3 class="text-xl font-semibold mb-2">Hari 1: Pembukaan dan Penjurian Awal</h3>
-                    <p>Acara pembukaan meriah dan sesi penjurian awal untuk semua peserta.</p>
-                </div>
-                <div class="mb-6">
-                    <h3 class="text-xl font-semibold mb-2">Hari 2: Kompetisi Utama</h3>
-                    <p>Puncak acara dengan penampilan terbaik dari para finalis.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-2">Hari 3: Pengumuman Pemenang</h3>
-                    <p>Pengumuman pemenang dan acara penutupan yang spektakuler.</p>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
 <script>
     // Daftar slide
