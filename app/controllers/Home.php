@@ -1,12 +1,10 @@
 <?php
 
 class Home {
-    public function index()
-    {
+    public function index() {
         echo 'home/index';
     }
-    public function halo()
-    {
+    public function halo() {
         echo 'halooo123/index';
     }
 }
