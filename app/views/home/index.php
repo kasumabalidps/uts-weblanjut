@@ -109,14 +109,14 @@
     // Galeri Cosplay
     function createCosplayGallery() {
     const galleryData = [
-        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'Naruto Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'One Piece Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'Attack on Titan Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'My Hero Academia Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'Demon Slayer Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'Dragon Ball Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'Sailor Moon Cosplay' },
-        { gambar: '<?= BASEURL; ?>/img/photo1.jpg', judul: 'Genshin Impact Cosplay' }
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo1.jpg', judul: 'Naruto Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo2.jpg', judul: 'One Piece Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo3.jpg', judul: 'Attack on Titan Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo4.jpg', judul: 'My Hero Academia Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo5.jpg', judul: 'Demon Slayer Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo6.jpg', judul: 'Dragon Ball Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo7.jpg', judul: 'Sailor Moon Cosplay' },
+        { gambar: '<?= BASEURL; ?>/img/cosplay/photo8.jpg', judul: 'Genshin Impact Cosplay' }
     ];
 
         const galleryContainer = document.getElementById('cosplayGallery');
@@ -125,13 +125,13 @@
             const galleryItem = document.createElement('div');
             galleryItem.className = 'relative overflow-hidden rounded-lg shadow-md';
             galleryItem.innerHTML = `
-                <img src="${item.gambar}" alt="Cosplay ${index + 1}" class="w-full h-64 object-cover">
+                <img src="${item.gambar}" alt="Cosplay ${index + 1}" class="w-full h-64 object-cover transform -rotate-90">
             <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                 <p class="text-white text-center">${item.judul}</p>
             </div>
         `;
-        galleryContainer.appendChild(galleryItem);
-    });
+            galleryContainer.appendChild(galleryItem);
+        });
 }
 
     // Panggil fungsi createCosplayGallery kalok domnya dah di load
