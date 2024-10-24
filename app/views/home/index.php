@@ -4,16 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pendaftaran Event Cosplay</title>
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/home.css">
+    <script src="<?= BASEURL; ?>/js/home.js"></script>
 </head>
 <body>
-    <div class="bg-gray-900 text-white">
-        <div class="container mx-auto px-4 py-16">
+    <div class="bg-gray-900 text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 py-16 relative z-10">
             <div class="text-center">
                 <h1 class="text-4xl font-bold mb-4">Event Cosplay Terbesar</h1>
                 <p class="text-xl mb-8">Bergabunglah dalam petualangan cosplay yang tak terlupakan!</p>
                 <a href="<?= BASEURL; ?>/pengisian" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full text-lg">
                     Daftar Sekarang
                 </a>
+            </div>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="relative">
+                    <img src="<?= BASEURL; ?>/img/banner1.png" style="width:100%">
+                    <div class="absolute inset-0 bg-black opacity-60"></div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="relative">
+                    <img src="<?= BASEURL; ?>/img/banner2.png" style="width:100%">
+                    <div class="absolute inset-0 bg-black opacity-60"></div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="relative">
+                    <img src="<?= BASEURL; ?>/img/banner3.png" style="width:100%">
+                    <div class="absolute inset-0 bg-black opacity-60"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -57,5 +79,22 @@
             </div>
         </div>
     </div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    slides[slideIndex - 1].style.display = "block";  
+    setTimeout(showSlides, 5000);
+}
+</script>
 </body>
 </html>
