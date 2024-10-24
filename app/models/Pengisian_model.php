@@ -8,7 +8,6 @@ class Pengisian_model {
         $database_host = 'mysql:host=localhost;dbname=uts-weblanjut';
         $database_user = 'root';
         $database_password = '';
-        $database_table = 'peserta';
 
         try {
             $this->db = new PDO($database_host, $database_user, $database_password);
@@ -19,7 +18,8 @@ class Pengisian_model {
 
     public function insertData($data)
     {
-        $query = "INSERT INTO $database_table (nama, nomerhp, karakter, anime, katagori, deskripsi) VALUES (:nama, :nomerhp, :karakter, :anime, :katagori, :deskripsi)";
+        $query = "INSERT INTO peserta (id, nama, nomerhp, karakter, anime, kategori, deskripsi) 
+        VALUES (NULL, :nama, :nomerhp, :karakter, :anime, :kategori, :deskripsi)";
         $this->db->prepare($query)->execute($data);
     }
 }

@@ -25,8 +25,8 @@
                     <input type="text" id="karakter" name="karakter" required class="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 text-lg py-2 px-3">
                 </div>
                 <div>
-                    <label for="asal" class="block text-sm font-medium text-gray-300">Asal Anime/Game</label>
-                    <input type="text" id="asal" name="asal" required class="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 text-lg py-2 px-3">
+                    <label for="anime" class="block text-sm font-medium text-gray-300">Asal Anime/Game</label>
+                    <input type="text" id="anime" name="anime" required class="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 text-lg py-2 px-3">
                 </div>
                 <div>
                     <label for="kategori" class="block text-sm font-medium text-gray-300">Kategori</label>
