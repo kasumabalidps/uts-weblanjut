@@ -1,7 +1,7 @@
 <?php
 
-class Pengisian {
+class Pengisian extends Controller {
     public function index() {
-        echo '<h2>Ini Page Index Pengisian</h2>';
+        $this->view('pengisian/index');
     }
 }

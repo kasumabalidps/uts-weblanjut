@@ -1,10 +1,7 @@
 <?php
 
-class Home {
+class Home extends Controller {
     public function index() {
-        echo 'home/index';
-    }
-    public function halo() {
-        echo 'halooo123/index';
+        $this->view('home/index');
     }
 }
