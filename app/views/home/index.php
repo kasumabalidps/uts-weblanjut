@@ -35,8 +35,8 @@
 
     <!-- Modal untuk buka gambar -->
     <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden p-4">
-    <div class="relative bg-white rounded-lg shadow-lg p-4 max-w-3xl w-full mx-4 max-h-[90vh] overflow-auto">
-        <button id="closeModal" class="absolute top-2 right-2 text-black bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center z-10">X</button>
+    <div class="relative bg-gray-700 rounded-lg shadow-lg py-6 px-6 max-w-3xl w-full mx-4 max-h-[90vh] overflow-auto" id="autoModal">
+        <button id="closeModal" class="absolute top-2 right-2 text-red-500 font-bold bg-gray-300 rounded-full w-8 h-8 flex items-center justify-center z-10">X</button>
         <img id="modalImage" src="" alt="Gambar Besar" class="w-full h-auto object-contain max-h-[80vh]">
         </div>
     </div>
