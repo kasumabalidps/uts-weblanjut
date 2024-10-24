@@ -69,7 +69,7 @@
         </div>
     </div>
 
-    <div class="bg-gray-800 text-white py-16">
+    <!-- <div class="bg-gray-800 text-white py-16">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-8">Jadwal Acara</h2>
             <div class="max-w-2xl mx-auto">
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 <script>
     // Animasi Slideshow
@@ -127,7 +127,7 @@
             galleryItem.innerHTML = `
                 <img src="${item.gambar}" alt="Cosplay ${index + 1}" class="w-full h-64 object-cover">
             <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                <p class="text-white text-center">${item.judul}</p>
+                <p class="text-white text-center font-bold">${item.judul}</p>
             </div>
         `;
             galleryContainer.appendChild(galleryItem);
