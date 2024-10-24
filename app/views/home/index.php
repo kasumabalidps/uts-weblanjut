@@ -125,7 +125,7 @@
             const galleryItem = document.createElement('div');
             galleryItem.className = 'relative overflow-hidden rounded-lg shadow-md';
             galleryItem.innerHTML = `
-                <img src="${item.gambar}" alt="Cosplay ${index + 1}" class="w-full h-64 object-cover transform -rotate-90">
+                <img src="${item.gambar}" alt="Cosplay ${index + 1}" class="w-full h-64 object-cover">
             <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
                 <p class="text-white text-center">${item.judul}</p>
             </div>
