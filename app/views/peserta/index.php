@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List Peserta</title>
 </head>
-<body class="bg-gray-300">
+<body class="bg-gray-200">
     <h1 class="text-3xl font-bold mb-6 mt-6 text-center text-black underline decoration-4 decoration-purple-500 underline-offset-8">Daftar Peserta Cosplay</h1>
     <div class="px-12">
         <table class="w-full border-collapse bg-white rounded-bl-lg rounded-br-lg border border-gray-200">

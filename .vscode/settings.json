@@ -1,3 +1,4 @@
 {
-    "codetogether.virtualCursorJoin": "ownVirtualCursor"
+    "codetogether.virtualCursorJoin": "sharedVirtualCursor",
+    "codetogether.virtualCursorRemember": true
 }

@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="bg-gray-900 text-white relative overflow-hidden">
-        <div class="container mx-auto px-4 py-48 relative z-10">
+        <div class="container mx-auto px-4 py-[16rem] relative z-10">
             <div class="text-center">
                 <h1 class="text-4xl font-bold mb-4">Event Cosplay Terbesar</h1>
                 <p class="text-xl mb-8">Bergabunglah dalam petualangan cosplay yang tak terlupakan!</p>
