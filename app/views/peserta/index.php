@@ -7,5 +7,8 @@
 </head>
 <body>
     <h1>Hello Peserta</h1>
+    <?php foreach ($data['peserta'] as $peserta) : ?>
+        <p><?= $peserta['nama'] ?></p>
+    <?php endforeach; ?>
 </body>
 </html>
