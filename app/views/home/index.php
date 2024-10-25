@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendaftaran Event Cosplay</title>
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/global.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/home.css">
-    <script src="<?= BASEURL; ?>/js/home.js"></script>
 </head>
 <body>
     <div class="bg-gray-900 text-white relative overflow-hidden">

@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List Peserta</title>
 </head>
-<body class="bg-gray-200">
-    <h1 class="text-3xl font-bold mb-6 mt-6 text-center text-black underline decoration-4 decoration-purple-500 underline-offset-8">Daftar Peserta Cosplay</h1>
-    <div class="px-12">
-        <table class="w-full border-collapse bg-white rounded-bl-lg rounded-br-lg border border-gray-200">
-            <thead>
-                <tr class="bg-gray-50">
-                    <th class="border border-gray-200 px-4 py-2">Nama</th>
-                    <th class="border border-gray-200 px-4 py-2">Karakter</th>
-                    <th class="border border-gray-200 px-4 py-2">Anime/Game</th>
-                    <th class="border border-gray-200 px-4 py-2">Kategori</th>
-                    <th class="border border-gray-200 px-4 py-2">Deskripsi</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($data['peserta'] as $peserta) : ?>
-                    <tr class="hover:bg-gray-50 text-center">
-                        <td class="border border-gray-200 px-4 py-2"><?= $peserta['nama'] ?></td>
-                        <td class="border border-gray-200 px-4 py-2"><?= $peserta['karakter'] ?></td>
-                        <td class="border border-gray-200 px-4 py-2"><?= $peserta['anime'] ?></td>
-                        <td class="border border-gray-200 px-4 py-2"><?= $peserta['kategori'] ?></td>
-                        <td class="border border-gray-200 px-4 py-2"><?= $peserta['deskripsi'] ?></td>
+<body class="bg-gray-900 text-gray-300">
+    <div class="container mx-auto py-8">
+        <h1 class="text-4xl font-bold mb-8 text-center text-[#4f45e4]">Daftar Peserta Cosplay 😂</h1>
+        <div class="overflow-x-auto">
+            <table class="w-full border-collapse bg-gray-800 rounded-lg shadow-lg">
+                <thead>
+                    <tr class="bg-[#4f45e4]">
+                        <th class="border border-gray-700 px-4 py-3 text-left">Nama</th>
+                        <th class="border border-gray-700 px-4 py-3 text-left">Karakter</th>
+                        <th class="border border-gray-700 px-4 py-3 text-left">Anime/Game</th>
+                        <th class="border border-gray-700 px-4 py-3 text-left">Kategori</th>
+                        <th class="border border-gray-700 px-4 py-3 text-left">Deskripsi</th>
                     </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <?php foreach ($data['peserta'] as $peserta) : ?>
+                        <tr class="hover:bg-gray-700 transition duration-300">
+                            <td class="border border-gray-700 px-4 py-3"><?= $peserta['nama'] ?></td>
+                            <td class="border border-gray-700 px-4 py-3"><?= $peserta['karakter'] ?></td>
+                            <td class="border border-gray-700 px-4 py-3"><?= $peserta['anime'] ?></td>
+                            <td class="border border-gray-700 px-4 py-3"><?= $peserta['kategori'] ?></td>
+                            <td class="border border-gray-700 px-4 py-3"><?= $peserta['deskripsi'] ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 </html>
