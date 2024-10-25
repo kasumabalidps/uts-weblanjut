@@ -30,9 +30,9 @@
                     <label for="kategori" class="block text-sm font-medium text-gray-300">Kategori</label>
                     <select id="kategori" name="kategori" required class="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-white focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 text-lg py-2 px-3">
                         <option value="">Pilih Kategori</option>
-                        <option value="pemula">Pemula</option>
-                        <option value="menengah">Menengah</option>
-                        <option value="profesional">Profesional</option>
+                        <option value="Pemula">Pemula</option>
+                        <option value="Menengah">Menengah</option>
+                        <option value="Profesional">Profesional</option>
                     </select>
                 </div>
                 <div>
