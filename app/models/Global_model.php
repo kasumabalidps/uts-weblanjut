@@ -7,7 +7,7 @@ class Global_model {
     {
         $database_host = 'mysql:host=localhost;dbname=uts-weblanjut';
         $database_user = 'root';
-        $database_password = '';
+        $database_password = 'root'; // Untuk MAMP
 
         try {
             $this->db = new PDO($database_host, $database_user, $database_password);
