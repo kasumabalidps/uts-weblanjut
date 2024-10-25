@@ -6,7 +6,7 @@
     <title>List Peserta</title>
 </head>
 <body class="bg-gray-300">
-    <h1 class="text-3xl font-bold mb-6 mt-6 text-center text-black">Daftar Peserta Cosplay</h1>
+    <h1 class="text-3xl font-bold mb-6 mt-6 text-center text-black underline decoration-4 decoration-purple-500 underline-offset-8">Daftar Peserta Cosplay</h1>
     <div class="px-12">
         <table class="w-full border-collapse bg-white rounded-bl-lg rounded-br-lg border border-gray-200">
             <thead>
@@ -20,7 +20,7 @@
             </thead>
             <tbody>
                 <?php foreach ($data['peserta'] as $peserta) : ?>
-                    <tr class="hover:bg-gray-50">
+                    <tr class="hover:bg-gray-50 text-center">
                         <td class="border border-gray-200 px-4 py-2"><?= $peserta['nama'] ?></td>
                         <td class="border border-gray-200 px-4 py-2"><?= $peserta['karakter'] ?></td>
                         <td class="border border-gray-200 px-4 py-2"><?= $peserta['anime'] ?></td>
