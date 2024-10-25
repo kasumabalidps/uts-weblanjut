@@ -13,7 +13,7 @@ class Pengisian extends Controller {
         $data['kategori'] = $_POST['kategori'];
         $data['deskripsi'] = $_POST['deskripsi'];
 
-        $this->model('Pengisian_model')->insertData($data);
+        $this->model('Global_model')->insertData($data);
         header('Location: ' . BASEURL . '/home');
         exit;
     }

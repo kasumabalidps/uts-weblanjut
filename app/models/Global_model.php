@@ -1,6 +1,6 @@
 <?php
 
-class Pengisian_model {
+class Global_model {
     private $db;
 
     public function __construct()
@@ -21,5 +21,9 @@ class Pengisian_model {
         $query = "INSERT INTO peserta (id, nama, nomerhp, karakter, anime, kategori, deskripsi) 
         VALUES (NULL, :nama, :nomerhp, :karakter, :anime, :kategori, :deskripsi)";
         $this->db->prepare($query)->execute($data);
+    }
+
+    public function getPeserta() {
+        
     }
 }
