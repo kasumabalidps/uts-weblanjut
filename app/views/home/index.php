@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/global.css">
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/home.css">
-</head>
-<body>
-    <div class="bg-gray-900 text-white relative overflow-hidden">
+<div class="bg-gray-900 text-white relative overflow-hidden">
         <div class="container mx-auto px-4 py-[16rem] relative z-10">
             <div class="text-center">
                 <h1 class="text-4xl font-bold mb-4">Event Cosplay Terbesar</h1>
                 <p class="text-xl mb-8">Bergabunglah dalam petualangan cosplay yang tak terlupakan!</p>
-                <a href="<?= BASEURL; ?>/pengisian" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-full text-lg">
+                <a href="<?=BASEURL; ?>/pengisian" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-full text-lg">
                     Daftar Sekarang
                 </a>
             </div>
@@ -42,14 +33,14 @@
 <script>
     // Daftar slide
     const slides = [
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo1.jpg', alt: 'Cosplay 1' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo2.jpg', alt: 'Cosplay 2' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo3.jpg', alt: 'Cosplay 3' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo4.jpg', alt: 'Cosplay 4' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo5.jpg', alt: 'Cosplay 5' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo6.jpg', alt: 'Cosplay 6' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo7.jpg', alt: 'Cosplay 7' },
-        { gambar: '<?= BASEURL; ?>/img/cosplay/photo8.jpg', alt: 'Cosplay 8' }
+        { gambar: '<?=BASEURL; ?>/img/cosplay/photo1.jpg', alt: 'Cosplay 1' },
+        { gambar: '<?=BASEURL; ?>/img/cosplay/photo2.jpg', alt: 'Cosplay 2' },
+        { gambar: '<?=BASEURL; ?>/img/cosplay/photo3.jpg', alt: 'Cosplay 3' },
+        { gambar: '<?=BASEURL; ?>/img/cosplay/photo4.jpg', alt: 'Cosplay 4' },
+        { gambar: '<?=BASEURL; ?>/img/cosplay/photo5.jpg', alt: 'Cosplay 5' },
+        { gambar: '<?=BASEURL; ?>/img/cosplay/photo6.jpg', alt: 'Cosplay 6' },
+        { gambar: '<?=BASEURL; ?>/img/cosplay/photo7.jpg', alt: 'Cosplay 7' },
+        { gambar: '<?=BASEURL; ?>/img/cosplay/photo8.jpg', alt: 'Cosplay 8' }
     ];
 
     function createSlideshow() {
@@ -101,14 +92,14 @@
     // Gambar Galerinya
     function createCosplayGallery() {
         const galleryData = [
-            { gambar: '<?= BASEURL; ?>/img/cosplay/photo1.jpg', judul: 'Gawr Gura Cosplay' },
-            { gambar: '<?= BASEURL; ?>/img/cosplay/photo2.jpg', judul: 'Mikasa Ackerman Attack on Titan Cosplay' },
-            { gambar: '<?= BASEURL; ?>/img/cosplay/photo3.jpg', judul: 'Luffy One Piece Cosplay' },
-            { gambar: '<?= BASEURL; ?>/img/cosplay/photo4.jpg', judul: 'Yor Forger Cosplay' },
-            { gambar: '<?= BASEURL; ?>/img/cosplay/photo5.jpg', judul: 'Kokomi Genshin Impact Cosplay' },
-            { gambar: '<?= BASEURL; ?>/img/cosplay/photo6.jpg', judul: 'Kanna Kamui Cosplay' },
-            { gambar: '<?= BASEURL; ?>/img/cosplay/photo7.jpg', judul: 'Klee Genshin Impact Cosplay' },
-            { gambar: '<?= BASEURL; ?>/img/cosplay/photo8.jpg', judul: 'Denji Chainsaw Man Cosplay' }
+            { gambar: '<?=BASEURL; ?>/img/cosplay/photo1.jpg', judul: 'Gawr Gura Cosplay' },
+            { gambar: '<?=BASEURL; ?>/img/cosplay/photo2.jpg', judul: 'Mikasa Ackerman Attack on Titan Cosplay' },
+            { gambar: '<?=BASEURL; ?>/img/cosplay/photo3.jpg', judul: 'Luffy One Piece Cosplay' },
+            { gambar: '<?=BASEURL; ?>/img/cosplay/photo4.jpg', judul: 'Yor Forger Cosplay' },
+            { gambar: '<?=BASEURL; ?>/img/cosplay/photo5.jpg', judul: 'Kokomi Genshin Impact Cosplay' },
+            { gambar: '<?=BASEURL; ?>/img/cosplay/photo6.jpg', judul: 'Kanna Kamui Cosplay' },
+            { gambar: '<?=BASEURL; ?>/img/cosplay/photo7.jpg', judul: 'Klee Genshin Impact Cosplay' },
+            { gambar: '<?=BASEURL; ?>/img/cosplay/photo8.jpg', judul: 'Denji Chainsaw Man Cosplay' }
         ];
 
         const galleryContainer = document.getElementById('cosplayGallery');
@@ -136,5 +127,3 @@
     // Panggil fungsi createCosplayGallery kalok domnya dah di load
     document.addEventListener('DOMContentLoaded', createCosplayGallery);
 </script>
-</body>
-</html>

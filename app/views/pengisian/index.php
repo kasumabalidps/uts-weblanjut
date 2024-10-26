@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/global.css">
-</head>
-<body>
-    <div class="bg-gray-900 min-h-screen flex items-center justify-center py-10">
+<div class="bg-gray-900 min-h-screen flex items-center justify-center py-10">
         <div class="bg-gray-800 p-8 rounded-lg shadow-2xl w-full max-w-md">
             <h1 class="text-3xl font-bold mb-6 text-center text-white">Pendaftaran Event Cosplay</h1>
-            <form action="<?= BASEURL; ?>/pengisian/daftar" method="POST" class="space-y-4">
+            <form action="<?=BASEURL; ?>/pengisian/daftar" method="POST" class="space-y-4">
                 <div>
                     <label for="nama" class="block text-sm font-medium text-gray-300">Nama Lengkap</label>
                     <input type="text" id="nama" name="nama" required class="mt-1 block w-full rounded-md bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50 text-lg py-2 px-3">
@@ -99,5 +91,3 @@
             preview.remove();
         }
     </script>
-</body>
-</html>

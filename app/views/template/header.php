@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pendaftaran Event Cosplay</title>
     <link rel="stylesheet" href="<?= BASEURL; ?>/css/global.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/home.css">
 </head>
 <body>
     <nav class="bg-gray-900 border-b-4 border-gray-500">
@@ -25,5 +26,3 @@
             </div>
         </div>
     </nav>
-</body>
-</html>
