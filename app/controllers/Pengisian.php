@@ -5,6 +5,10 @@ class Pengisian extends Controller {
         $this->view('template/header');
         $this->view('pengisian/index');
     }
+    public function berhasil() {
+        $this->view('template/header');
+        $this->view('pengisian/berhasil');
+    }
     public function daftar() {
         $data['nama'] = $_POST['nama'];
         $data['nomerhp'] = $_POST['nomer'];
@@ -14,7 +18,7 @@ class Pengisian extends Controller {
         $data['deskripsi'] = $_POST['deskripsi'];
 
         $this->model('Global_model')->insertData($data);
-        header('Location: ' . BASEURL . '/home');
+        header('Location: ' . BASEURL . '/pengisian/berhasil');
         exit;
     }
 }
