@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `peserta` (
   `nomerhp` varchar(255) NOT NULL DEFAULT '',
   `karakter` varchar(255) NOT NULL DEFAULT '',
   `anime` varchar(255) NOT NULL DEFAULT '',
-  `kategori` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT '',
+  `kategori` varchar(255) NOT NULL DEFAULT '',
   `deskripsi` varchar(255) DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
