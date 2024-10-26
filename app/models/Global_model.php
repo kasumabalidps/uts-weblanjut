@@ -1,6 +1,6 @@
 <?php
 
-class Global_model {
+class Global_model{
     private $db;
 
     public function __construct()
