@@ -1,5 +1,5 @@
 <div class="bg-gray-900 text-gray-300 min-h-screen">
-    <div class="container mx-auto py-8 ">
+    <div class="container mx-auto py-8">
         <h1 class="text-4xl font-bold mb-8 text-center text-[#4f45e4]">Daftar Peserta Cosplay 😂</h1>
         <div class="overflow-x-auto">
             <table class="w-full border-collapse bg-gray-800 rounded-lg shadow-lg">
