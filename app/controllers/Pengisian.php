@@ -4,10 +4,12 @@ class Pengisian extends Controller {
     public function index() {
         $this->view('template/header');
         $this->view('pengisian/index');
+        $this->view('template/footer');
     }
     public function berhasil() {
         $this->view('template/header');
         $this->view('pengisian/berhasil');
+        $this->view('template/footer');
     }
     public function daftar() {
         $data['nama'] = $_POST['nama'];
