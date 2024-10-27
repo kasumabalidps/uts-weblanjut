@@ -1,5 +1,5 @@
 <div class="bg-gradient-to-r from-gray-400 to-yellow-400 text-white relative overflow-auto">
-    <div class="container mx-auto px-4 py-52 relative z-10">
+    <div class="container mx-auto px-4 py-96 relative z-10">
         <div class="text-center">
             <h1 class="text-5xl font-extrabold mb-4">Event Cosplay Terbesar</h1>
             <p class="text-2xl mb-8">Bergabunglah dalam petualangan cosplay yang tak terlupakan!</p>
@@ -13,14 +13,16 @@
     </div>
 </div>
 
+<section id="galeri">
 <div class="bg-white py-16">
     <div class="container mx-auto px-4">
         <h2 class="text-4xl font-bold text-center mb-8 underline decoration-4 decoration-purple-500 underline-offset-8">Galeri Cosplay</h2>
         <div id="cosplayGallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <!-- Galerinya ambil dari js-->
+            </div>  
         </div>
     </div>
-</div>
+</section>
 
 <!-- Modal untuk buka gambar -->
 <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 invisible flex items-center justify-center z-50 p-4">
