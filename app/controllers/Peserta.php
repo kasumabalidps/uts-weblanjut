@@ -6,6 +6,5 @@ class Peserta extends Controller {
         $this->view('template/header');
         $this->view('template/navbar');
         $this->view('peserta/index', $data);
-        $this->view('template/footer');
     }
 }

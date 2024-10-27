@@ -18,8 +18,8 @@ class Global_model{
 
     public function insertData($data)
     {
-        $query = "INSERT INTO peserta (id, nama, nomerhp, karakter, anime, kategori, deskripsi) 
-        VALUES (NULL, :nama, :nomerhp, :karakter, :anime, :kategori, :deskripsi)";
+        $query = "INSERT INTO peserta (id, nama, nomerhp, karakter, anime, kategori, deskripsi, tanggal) 
+        VALUES (NULL, :nama, :nomerhp, :karakter, :anime, :kategori, :deskripsi, NOW())";
         $this->db->prepare($query)->execute($data);
     }
 
