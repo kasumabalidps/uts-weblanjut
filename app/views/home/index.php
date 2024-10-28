@@ -69,7 +69,13 @@
         { gambar: '<?=BASEURL; ?>/img/konser/1.jpg', alt: 'Konser 1' },
         { gambar: '<?=BASEURL; ?>/img/konser/2.webp', alt: 'Konser 2' },
         { gambar: '<?=BASEURL; ?>/img/konser/3.jpg', alt: 'Konser 3' },
-        { gambar: '<?=BASEURL; ?>/img/konser/4.jpg', alt: 'Konser 4' }
+        { gambar: '<?=BASEURL; ?>/img/konser/4.jpg', alt: 'Konser 4' },
+        { gambar: '<?=BASEURL; ?>/img/konser/5.jpg', alt: 'Konser 5' },
+        { gambar: '<?=BASEURL; ?>/img/konser/6.webp', alt: 'Konser 6' },
+        { gambar: '<?=BASEURL; ?>/img/konser/7.jpg', alt: 'Konser 7' },
+        { gambar: '<?=BASEURL; ?>/img/konser/8.jpg', alt: 'Konser 8' },
+        { gambar: '<?=BASEURL; ?>/img/konser/9.jpg', alt: 'Konser 9' },
+        { gambar: '<?=BASEURL; ?>/img/konser/10.jpg', alt: 'Konser 10' }
     ];
 
     function createSlideshow() {
