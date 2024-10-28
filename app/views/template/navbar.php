@@ -1,4 +1,4 @@
-<nav class="bg-gradient-to-r from-gray-900 to-gray-800 backdrop-blur-xl shadow-xl border-b border-white/10">
+<nav class="bg-gradient-to-r from-gray-950/95 to-gray-900/95 shadow-xl border-b border-white/5 backdrop-blur-md">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex items-center">
