@@ -10,6 +10,7 @@
                         <th class="border border-gray-700 px-4 py-3 text-left text-white">Anime/Game</th>
                         <th class="border border-gray-700 px-4 py-3 text-left text-white">Kategori</th>
                         <th class="border border-gray-700 px-4 py-3 text-left text-white">Deskripsi</th>
+                        <th class="border border-gray-700 px-4 py-3 text-left text-white">Tanggal</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -20,6 +21,7 @@
                             <td class="border border-gray-700 px-4 py-3 text-white"><?= $peserta['anime'] ?></td>
                             <td class="border border-gray-700 px-4 py-3 text-white"><?= $peserta['kategori'] ?></td>
                             <td class="border border-gray-700 px-4 py-3 text-white"><?= $peserta['deskripsi'] ?></td>
+                            <td class="border border-gray-700 px-4 py-3 text-white"><?= $peserta['tanggal'] ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

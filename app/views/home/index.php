@@ -1,4 +1,4 @@
-<div class="bg-gradient-to-r from-gray-400 to-yellow-400 text-white relative overflow-auto">
+<div class="bg-gradient-to-b from-gray-400 to-yellow-400 text-white relative overflow-auto">
     <div class="container mx-auto px-4 py-40 relative z-10">
         <div class="text-center">
             <h1 class="text-5xl font-extrabold mb-4">Event Cosplay Terbesar</h1>
