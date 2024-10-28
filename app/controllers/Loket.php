@@ -1,26 +1,25 @@
 <?php
 
-class Pengisian extends Controller {
+class Loket extends Controller {
     public function index() {
         $this->view('template/header');
         $this->view('template/navbar');
-        $this->view('pengisian/index');
+        $this->view('loket/index');
     }
     public function berhasil() {
         $this->view('template/header');
         $this->view('template/navbar');
-        $this->view('pengisian/berhasil');
+        $this->view('loket/berhasil');
     }
-    public function daftar() {
+    public function pesanan() {
         $data['nama'] = $_POST['nama'];
-        $data['nomerhp'] = $_POST['nomer'];
-        $data['karakter'] = $_POST['karakter'];
-        $data['anime'] = $_POST['anime'];
+        $data['nomer'] = $_POST['nomer'];
         $data['kategori'] = $_POST['kategori'];
         $data['deskripsi'] = $_POST['deskripsi'];
+        $data['jumlah'] = $_POST['jumlah'];
 
         $this->model('Global_model')->insertData($data);
-        header('Location: ' . BASEURL . '/pengisian/berhasil');
+        header('Location: ' . BASEURL . '/loket/berhasil');
         exit;
     }
 }

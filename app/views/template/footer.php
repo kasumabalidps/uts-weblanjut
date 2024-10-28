@@ -1,8 +1,36 @@
-        <div class="relative bottom-0 w-full text-white text-center">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#111827" fill-opacity="1" d="M0,224L48,229.3C96,235,192,245,288,229.3C384,213,480,171,576,176C672,181,768,235,864,245.3C960,256,1056,224,1152,218.7C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-            <footer class="relative bottom-0 w-full bg-[#111827] text-white pb-8 text-center">
-                    <p class="text-sm">&copy; 2024 <span class="font-bold">Nando</span>. Hak Cipta Dilindungi.</p>
-                </footer>
+        <div class="relative bottom-0 w-full">
+            <footer class="bg-gradient-to-t from-gray-900 to-gray-800 text-white py-12">
+                <div class="container mx-auto px-4">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl font-bold mb-4">Tentang Kami</h3>
+                            <p class="text-gray-400">Menghadirkan konser musik berkualitas untuk pengalaman tak terlupakan.</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-xl font-bold mb-4">Kontak</h3>
+                            <p class="text-gray-400">Email: info@concert.com</p>
+                            <p class="text-gray-400">Tel: (021) 123-4567</p>
+                        </div>
+                        <div class="text-center md:text-right">
+                            <h3 class="text-xl font-bold mb-4">Ikuti Kami</h3>
+                            <div class="flex justify-center md:justify-end space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                    <i class="fab fa-twitter text-xl"></i>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                                    <i class="fab fa-facebook text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-700 pt-8">
+                        <p class="text-center text-gray-400">&copy; 2024 Concert Events. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
         </div>
 </body>
 </html>

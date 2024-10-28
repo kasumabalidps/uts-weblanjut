@@ -18,13 +18,13 @@ class Global_model{
 
     public function insertData($data)
     {
-        $query = "INSERT INTO peserta (id, nama, nomerhp, karakter, anime, kategori, deskripsi, tanggal) 
-        VALUES (NULL, :nama, :nomerhp, :karakter, :anime, :kategori, :deskripsi, NOW())";
+        $query = "INSERT INTO loket (id, nama, nomer, kategori, jumlah, deskripsi, tanggal) 
+        VALUES (NULL, :nama, :nomer, :kategori, :jumlah, :deskripsi, NOW())";
         $this->db->prepare($query)->execute($data);
     }
 
     public function getPeserta() {
-        $query = "SELECT * FROM peserta";
+        $query = "SELECT * FROM loket";
         $stmt = $this->db->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
