@@ -1,5 +1,5 @@
 <div class="bg-gradient-to-r from-gray-400 to-yellow-400 text-white relative overflow-auto">
-    <div class="container mx-auto px-4 py-96 relative z-10">
+    <div class="container mx-auto px-4 py-40 relative z-10">
         <div class="text-center">
             <h1 class="text-5xl font-extrabold mb-4">Event Cosplay Terbesar</h1>
             <p class="text-2xl mb-8">Bergabunglah dalam petualangan cosplay yang tak terlupakan!</p>
@@ -128,4 +128,14 @@
 
     // Panggil fungsi createCosplayGallery kalok domnya dah di load
     document.addEventListener('DOMContentLoaded', createCosplayGallery);
+
+    window.scroll({
+    top: 2500, 
+    left: 0, 
+    behavior: 'smooth'
+    });
+
+    document.getElementById('galeri').scrollIntoView({ 
+        behavior: 'smooth' 
+        });
 </script>

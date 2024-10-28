@@ -10,7 +10,6 @@
                             <a href="<?= BASEURL; ?>" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-semibold">Beranda</a>
                             <a href="<?= BASEURL; ?>/pengisian" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-semibold">Pendaftaran</a>
                             <a href="<?= BASEURL; ?>/peserta" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-semibold">Peserta</a>
-                            <!-- <a href="#galeri" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-semibold">Galery Peserta</a> -->
                         </div>
                     </div>
                 </div>

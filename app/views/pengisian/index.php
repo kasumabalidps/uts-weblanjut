@@ -1,5 +1,5 @@
 <div class="bg-gray-900 min-h-screen flex items-center justify-center">
-    <div class="bg-gray-800 p-8 rounded-lg shadow-2xl w-full max-w-md">
+    <div class="bg-gray-800 p-8 my-10 rounded-lg shadow-2xl w-full max-w-md">
         <h1 class="text-3xl font-bold mb-6 text-center text-white">Pendaftaran Event Cosplay</h1>
         <form action="<?=BASEURL; ?>/pengisian/daftar" method="POST" class="space-y-4">
             <div>
