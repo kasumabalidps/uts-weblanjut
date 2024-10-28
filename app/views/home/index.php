@@ -67,11 +67,11 @@
 <script>
     const slides = [
         { gambar: '<?=BASEURL; ?>/img/konser/1.jpg', alt: 'Konser 1' },
-        { gambar: '<?=BASEURL; ?>/img/konser/2.webp', alt: 'Konser 2' },
+        { gambar: '<?=BASEURL; ?>/img/konser/2.jpg', alt: 'Konser 2' },
         { gambar: '<?=BASEURL; ?>/img/konser/3.jpg', alt: 'Konser 3' },
         { gambar: '<?=BASEURL; ?>/img/konser/4.jpg', alt: 'Konser 4' },
         { gambar: '<?=BASEURL; ?>/img/konser/5.jpg', alt: 'Konser 5' },
-        { gambar: '<?=BASEURL; ?>/img/konser/6.webp', alt: 'Konser 6' }
+        { gambar: '<?=BASEURL; ?>/img/konser/6.jpg', alt: 'Konser 6' }
     ];
 
     function createSlideshow() {
