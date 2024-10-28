@@ -5,6 +5,6 @@ class CekTiket extends Controller {
         $data['peserta'] = $this->model('Global_model')->getPeserta();
         $this->view('template/header');
         $this->view('template/navbar');
-        $this->view('cekticker/index', $data);
+        $this->view('cekticket/index', $data);
     }
 }
