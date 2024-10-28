@@ -13,10 +13,10 @@
                         <div class="text-center">
                             <h3 class="text-xl font-bold mb-4">Kontak</h3>
                             <div class="space-y-2">
-                                <p class="text-gray-400">Email: info@concert.com</p>
-                                <p class="text-gray-400">Tel: (021) 123-4567</p>
-                                <p class="text-gray-400">WhatsApp: +62 812-3456-7890</p>
-                                <p class="text-gray-400">Alamat: Jl. Musik No. 123, Jakarta</p>
+                                <p class="text-gray-400">Email: info@concert.anjay</p>
+                                <p class="text-gray-400">Tel: (0361) 737373</p>
+                                <p class="text-gray-400">WhatsApp: +62 81234567890</p>
+                                <p class="text-gray-400">Alamat: Jl. Taman Pancing, Kuta Selatan, Badung</p>
                             </div>
                         </div>
 
@@ -77,7 +77,7 @@
 
                     <!-- Copyright -->
                     <div class="border-t border-gray-700 pt-8">
-                        <p class="text-center text-gray-400">&copy; 2024 Concert Events. All rights reserved.</p>
+                        <p class="text-center text-gray-400">&copy; 2024 Concert Events Nandoes. All rights reserved.</p>
                     </div>
                 </div>
             </footer>
