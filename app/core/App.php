@@ -12,7 +12,6 @@ class App{
         if(isset($url[0])){
             if(file_exists('../app/controllers/' . ucfirst($url[0]) . '.php') ) {
                 $this->controller = ucfirst($url[0]);
-                unset($url[0]);
             }
         }
 
@@ -23,7 +22,6 @@ class App{
         if(isset($url[1])) {
             if(method_exists($this->controller, $url[1])) {
                 $this->method = $url[1];
-                unset($url[1]);
             }
         }
 
