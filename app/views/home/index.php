@@ -10,7 +10,7 @@
                 </p>
             </div>
             <div class="flex justify-center">
-                <a href="<?=BASEURL; ?>/pengisian" class="group relative inline-flex items-center px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 transition-all duration-300">
+                <a href="<?=BASEURL; ?>/loket" class="group relative inline-flex items-center px-8 py-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-white/10 transition-all duration-300">
                     <span class="relative text-lg font-medium">
                         Pesan Tiket
                     </span>
