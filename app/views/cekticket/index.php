@@ -4,9 +4,7 @@
         <div class="mb-12">
             <div class="max-w-xl mx-auto">
                 <div class="relative">
-                    <input type="text" 
-                           id="searchInput"
-                           onkeyup="searchTable()"
+                    <input type="text"
                            placeholder="Masukkan nama untuk mencari tiket..." 
                            class="w-full bg-gray-800/50 border border-gray-700 text-gray-300 rounded-xl px-5 py-4 pl-12 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                     >
@@ -62,22 +60,3 @@
         </div>
     </div>
 </div>
-        <script>
-        function searchTable() {
-            var input = document.getElementById("searchInput");
-            var filter = input.value.toLowerCase();
-            var rows = document.getElementsByTagName("tr");
-
-            for (var i = 1; i < rows.length; i++) {
-                var nameCell = rows[i].getElementsByTagName("td")[0];
-                if (nameCell) {
-                    var name = nameCell.textContent || nameCell.innerText;
-                    if (name.toLowerCase().indexOf(filter) > -1) {
-                        rows[i].style.display = "";
-                    } else {
-                        rows[i].style.display = "none";
-                    }
-                }
-            }
-        }
-        </script>
