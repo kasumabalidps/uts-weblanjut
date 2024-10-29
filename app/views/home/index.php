@@ -108,42 +108,42 @@
             { 
                 nama: 'Rock Revolution 2024',
                 tanggal: '15 Maret 2024',
-                lokasi: 'Stadion Utama',
+                lokasi: 'Politeknik Negeri Bali',
                 harga: '500.000',
                 deskripsi: 'Rasakan sensasi musik rock legendaris dengan penampilan spektakuler!'
             },
             { 
                 nama: 'K-Pop Wonderland', 
                 tanggal: '20 Maret 2024',
-                lokasi: 'Convention Center',
+                lokasi: 'Lapangan Renon',
                 harga: '350.000',
                 deskripsi: 'Saksikan aksi memukau dari idol K-Pop favoritmu dalam satu panggung!'
             },
             { 
                 nama: 'Smooth Jazz Night',
                 tanggal: '25 Maret 2024',
-                lokasi: 'Taman Kota',
+                lokasi: 'Berbagi Coffee',
                 harga: '400.000',
                 deskripsi: 'Nikmati alunan jazz mellow di bawah gemerlap bintang malam ini!'
             },
             { 
                 nama: 'Metal Mayhem Fest',
                 tanggal: '15 Maret 2024',
-                lokasi: 'Stadion Utama',
+                lokasi: 'Rumah Dani',
                 harga: '500.000',
                 deskripsi: 'Bergabunglah dalam festival metal terbesar dengan lineup mengagumkan!'
             },
             { 
                 nama: 'EDM Paradise', 
                 tanggal: '20 Maret 2024',
-                lokasi: 'Convention Center',
+                lokasi: 'Stadion GBK',
                 harga: '350.000',
                 deskripsi: 'Rasakan euforia musik elektronik dengan DJ internasional terbaik!'
             },
             { 
                 nama: 'Classic Symphony',
                 tanggal: '25 Maret 2024',
-                lokasi: 'Taman Kota',
+                lokasi: 'Tennis Senayan',
                 harga: '400.000',
                 deskripsi: 'Hayati orkestra klasik memukau dalam suasana malam yang magis!'
             }
