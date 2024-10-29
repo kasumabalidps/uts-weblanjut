@@ -19,25 +19,6 @@
             </div>
         </div>
 
-        <script>
-        function searchTable() {
-            var input = document.getElementById("searchInput");
-            var filter = input.value.toLowerCase();
-            var rows = document.getElementsByTagName("tr");
-
-            for (var i = 1; i < rows.length; i++) {
-                var nameCell = rows[i].getElementsByTagName("td")[0];
-                if (nameCell) {
-                    var name = nameCell.textContent || nameCell.innerText;
-                    if (name.toLowerCase().indexOf(filter) > -1) {
-                        rows[i].style.display = "";
-                    } else {
-                        rows[i].style.display = "none";
-                    }
-                }
-            }
-        }
-        </script>
 
         <div class="bg-gray-800/30 backdrop-blur-xl rounded-2xl border border-gray-700/50 shadow-xl">
             <div class="p-6">
@@ -81,3 +62,22 @@
         </div>
     </div>
 </div>
+        <script>
+        function searchTable() {
+            var input = document.getElementById("searchInput");
+            var filter = input.value.toLowerCase();
+            var rows = document.getElementsByTagName("tr");
+
+            for (var i = 1; i < rows.length; i++) {
+                var nameCell = rows[i].getElementsByTagName("td")[0];
+                if (nameCell) {
+                    var name = nameCell.textContent || nameCell.innerText;
+                    if (name.toLowerCase().indexOf(filter) > -1) {
+                        rows[i].style.display = "";
+                    } else {
+                        rows[i].style.display = "none";
+                    }
+                }
+            }
+        }
+        </script>
